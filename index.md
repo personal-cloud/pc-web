@@ -9,5 +9,3 @@ Over time these centralized systems gave way to distributed ownership - personal
 Internet services and cloud computing has reached such an inflection point. The constraints that once required centralized systems to operate at Internet-scale have been overcome.
 
 **Welcome to the era of the Personal Cloud.**
-
-[Foo](?foo.md)

@@ -18,8 +18,10 @@
 <body>
   <zero-md></zero-md>
   <script>
-    const page = location.search ? location.search.slice(1) : 'index.md';
-    const srcUrl = "https://raw.githubusercontent.com/personal-cloud/pc-web/main/" + page;
+    const page = location.search ? location.search.slice(1) : "index.md";
+    const srcRoot = location.hostname == 'localhost' ?
+      './' : "https://raw.githubusercontent.com/personal-cloud/pc-web/main/";
+    const srcUrl = srcRoot + page;
     const zeroMd = document.querySelector("zero-md");
     zeroMd.setAttribute("src", srcUrl);
   </script>
