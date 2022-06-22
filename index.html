@@ -3,11 +3,25 @@
   <title>Personal Cloud</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        --color-fg-default: #c9d1d9;
+        --color-canvas-default: #0d1117;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      body {
+        --color-fg-default: #24292f;
+        --color-canvas-default: #ffffff;
+      }
+    }
     body {
       font-family: -apple-system, sans-serif;
       max-width: 640px;
       margin: 0 auto;
       padding: 4em;
+      color: var(--color-fg-default);
+      background-color: var(--color-canvas-default);
     }
   </style>
   <script
@@ -16,7 +30,12 @@
   ></script>
 </head>
 <body>
-  <zero-md></zero-md>
+  <zero-md>
+    <template>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
+    </template>
+  </zero-md>
   <script>
     const page = location.search ? location.search.slice(1) : "index.md";
     const srcRoot = location.hostname == 'localhost' ?
