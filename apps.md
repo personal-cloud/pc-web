@@ -1,4 +1,4 @@
-#### [← Home](https://personalcloud.com)
+#### [← Personal Cloud](/)
 
 # Introducing Cloud Apps
 

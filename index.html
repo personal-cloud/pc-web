@@ -37,10 +37,10 @@
     </template>
   </zero-md>
   <script>
-    const page = location.search ? location.search.slice(1) : "index.md";
+    const page = location.search ? location.search.slice(1).split("&")[0] : "index";
     const srcRoot = location.hostname == 'localhost' ?
-      './' : "https://raw.githubusercontent.com/personal-cloud/pc-web/main/";
-    const srcUrl = srcRoot + page;
+      './' : "https://personalcloud.com/";
+    const srcUrl = srcRoot + page + ".md";
     const zeroMd = document.querySelector("zero-md");
     zeroMd.setAttribute("src", srcUrl);
   </script>
