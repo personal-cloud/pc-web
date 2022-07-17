@@ -8,6 +8,8 @@ Over time centralization gave way to distributed ownership - personal computers 
 
 Cloud computing has reached such an inflection point. The constraints that once required centrally owned services to operate at Internet-scale have been overcome.
 
+The next step is distributed ownership over Internet services and their data.
+
 **Welcome to the era of the Personal Cloud.**
 
 #
